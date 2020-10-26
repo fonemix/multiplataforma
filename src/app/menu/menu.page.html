@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+     <ion-button (click)="presionarMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+     </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+        <ion-button [routerLink]="['/home']" routerLinkActive="router-link-active">
+            <ion-icon slot="icon-only" name="home"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+
+    <ion-title>menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-menu side="start" menuId="menu" contentId="main">
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-title>Bienvenido</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list>
+                <ion-item [routerLink]="['/home']" routerLinkActive="router-link-active">
+                    <ion-icon name="information-circle" >Ver informacion</ion-icon>
+                    Información
+                </ion-item>
+                <ion-item [routerLink]="['/home']" routerLinkActive="router-link-active">
+                    <ion-icon name="star"></ion-icon>
+                    Favoritos
+                </ion-item>
+                <ion-item [routerLink]="['/home']" routerLinkActive="router-link-active">
+                    <ion-icon name="send"></ion-icon>
+                    Envíos
+                </ion-item>
+                <ion-item [routerLink]="['/home']" routerLinkActive="router-link-active">
+                    <ion-icon name="person"></ion-icon>
+                    Cuenta
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main"></ion-router-outlet>
+</ion-content>

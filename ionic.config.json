@@ -1,5 +1,7 @@
 {
   "name": "Evaluacion1ClaudiaVillalobos",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

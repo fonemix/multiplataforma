@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <img src="../assets/img/Logo.JPG">
+    <ion-item>
+        <ion-label></ion-label>
+        <ion-input type="text" [(ngModel)]="username" placeholder="nombre de usuario"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label></ion-label>
+        <ion-input type="password" [(ngModel)]="password" placeholder="contraseña"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label></ion-label>
+        <ion-input type="password" [(ngModel)]="cpassword" placeholder="repetir contraseña"></ion-input>
+    </ion-item>
+
+        <ion-button expand="block" (click)="registrar()">Registrar</ion-button>
+</ion-content>
